@@ -4,17 +4,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Your Lat</title>
     
     <script src="prePermissions.js" type="text/javascript"></script>
     <script>
         window.onload = function (){
-            getGeoLocation( printLatAndLong );
+            getGeoLocation( printLatAndLong, "You are about to be asked to share your location with Your Lat." );
             printUserAgent();
-            
-            
         };
-        
         
         
         function printLatAndLong ( position ) {    
@@ -22,11 +19,8 @@
             
         };
         
-       
         
-        
-        
-        
+           
         
     </script>
     
@@ -34,7 +28,8 @@
 </head>
  
 <body>
-    <h1>Testing</h1>
+    <h1>Your Lat</h1>
+    <h2>This site will tell you your exact latitude and longitude.</h2>
     <div id="location"></div>
  
 
